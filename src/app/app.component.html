@@ -1,0 +1,26 @@
+
+<div class="header">
+
+  <h1>Welcome to {{title}} </h1>
+</div>
+
+<nav>
+ 
+
+
+  <ul>
+      <li><a href="#">Home</a></li>
+      <li><a routerLink='./department'>Department details</a></li>
+      <li><a routerLink='./employees'>Employee details</a></li>
+      <li><a href="#">contact us</a></li> 
+  </ul>
+</nav>
+
+<h2  [ngStyle]="ChangeStyle">Routing links to get a fake API's</h2>
+
+<h3  [ngStyle]="ChangeHeader">click below buttons to get a data from dummy json</h3>
+
+<button routerLink = './employees'>Employee details</button>
+<button routerLink = './department' class="btn-2">Department details</button>
+
+<router-outlet></router-outlet>
